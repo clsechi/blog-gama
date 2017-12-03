@@ -4,6 +4,10 @@ module.exports = function (app) {
 		res.render('index');
 	});
 
+	app.get('/about', function (req, res) {
+		res.render('about');
+	});
+
 	app.post('/saveInfo', function (req, res) {
 		var clientInfo = req.body;
 
