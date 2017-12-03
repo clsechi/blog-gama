@@ -1,0 +1,56 @@
+.logo {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.subtitulo {
+	margin-bottom: 50px;
+=}
+
+
+.form {
+	border: 2px solid #2c2f3c;
+	padding: 10px;
+}
+
+.form-item {
+	margin: 5px;
+	border-radius: 20px;
+	width: 75%;
+}
+
+.form-button {
+	margin-top: 5px;
+	width: 25%;
+	border-radius: 20px;
+}
+
+.conteudo {
+	padding: 5px;
+	margin: 5px;
+	height: 70%;
+	border: 1px dashed black;
+}
+
+.titulo-conteudo {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.navbar-inverse {
+	background-color: #2c2f3c !important;
+	border-color: #2c2f3c !important;
+}
+
+.navbar-inverse .navbar-nav {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background: #383b48 !important;
+	font-size: 16px;
+	font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mundo dos Negócios</title>
+		
+		<link rel="icon" href="favicon.ico" />
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Logo</a>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Página incial</a></li>
+						<li><a href="about.html">Sobre</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+		<div class="row" style="margin-top: 70px;">
+			<div class="col-lg-2"></div>
+
+			<div class="subtitulo text-center col-lg-8">
+				<h2>Bem-vindo ao portal sobre notícias, informações e dicas para alavancar o seu negócio.</h2>
+			</div>
+			
+			<div class="col-lg-2"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-1"></div>
+
+			<div class="conteudo col-lg-6">
+				<label class="titulo-conteudo">
+					Conteúdo
+				</label>
+				
+				<p class="text-center">
+					<strong>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Etiam rutrum ac orci in ornare. Nulla viverra a odio quis euismod. 
+						Nullam consectetur suscipit lacus ultrices convallis. 
+						Fusce fringilla, ante a molestie convallis, nulla ex placerat leo, at scelerisque felis mi vel lacus. 
+						Maecenas a massa nibh. Pellentesque ex leo, tristique id felis a, ornare euismod orci. 
+						Quisque eu elementum ligula, eget ornare arcu. Donec ac mauris nisl. 
+						Proin sagittis vestibulum fringilla. Duis in mattis dui. 
+						Ut est mauris, facilisis nec venenatis eu, tempor nec felis. 
+						Ut eu eros in orci tempor iaculis. Sed auctor urna non urna suscipit vulputate.
+					</strong>
+				</p>
+			</div>
+
+			<div class="col-lg-1"></div>
+
+			<div class="col-lg-4 text-right">
+				<div class="form text-center">
+					<h4>Receba notícias diretamente no seu e-mail</h4>
+					<input type="text" id="nome" name="nome" class="form-item text-center" placeholder="Nome Completo" />
+					<br/>
+					<input type="text" id="email" name="email" class="form-item text-center" placeholder="Email Corporativo" />
+					<br/>
+					<strong>
+						<input type="button" id="confirmar" onclick="validarEmail()" class="form-button btn-success text-center" name="confirmar" value="Confirmar" />
+					</strong>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
