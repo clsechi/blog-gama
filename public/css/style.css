@@ -4,9 +4,13 @@
 }
 
 .subtitulo {
-	margin-bottom: 50px;
-=}
+	margin-top: 5px !important;
+	margin-bottom: 30px;
+}
 
+.text-center {
+	text-align: center;
+}
 
 .form {
 	border: 2px solid #2c2f3c;
@@ -26,9 +30,9 @@
 }
 
 .conteudo {
-	padding: 5px;
+	padding: auto;
 	margin: 5px;
-	height: 70%;
+	height: auto;
 	border: 1px dashed black;
 }
 
@@ -38,7 +42,7 @@
 }
 
 .navbar-inverse {
-	background-color: #2c2f3c !important;
+	background-color: #424659 !important;
 	border-color: #2c2f3c !important;
 }
 
@@ -53,4 +57,17 @@
 	background: #383b48 !important;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+#Nome-Empresa{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+#conteudo{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#tituloConteudo{
+	margin-bottom: 40px;
 }
