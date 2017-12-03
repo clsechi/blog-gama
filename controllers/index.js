@@ -11,6 +11,8 @@ module.exports = function (app) {
 	app.post('/saveInfo', function (req, res) {
 		var clientInfo = req.body;
 
+		var ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
+
 		app.infra.connectionFactory(function (err, connection) {
 			var blogDAO = new app.infra.BlogDAO(connection);
 
@@ -20,6 +22,8 @@ module.exports = function (app) {
 		});
 
 		console.log(clientInfo);
+
+		console.log(req.ip);
 
 		res.send('ok.');
 	});
