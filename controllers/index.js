@@ -31,6 +31,8 @@ module.exports = function (app) {
 
 		clientInfo.ip = req.ip;
 
+		clientInfo.time = new Date().toString();
+
 		app.infra.connectionFactory(function (err, connection) {
 			var blogDAO = new app.infra.BlogDAO(connection);
 

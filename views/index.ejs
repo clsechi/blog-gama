@@ -1,153 +1,138 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Mundo dos Negócios</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<link rel="icon" href="favicon.ico" />
+		<title>Transforma Negócios</title>
 		
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
-		
+		<link rel="icon" href="./icon/favicon.ico" />
+
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/js/script.js"></script>
 	</head>
 	<body>
-		<header class="masthead">
-	        <h3 class="text-muted" id="Nome-Empresa">Mundo dos Negócios</h3>
-			<nav class="navbar navbar-inverse">
-				<div class="container">
-					<div class="navbar-header">
-						<a class="navbar-brand"><img alt="Brand" height="28" width="28" class="img-circle" src="/assets/images.jpg"></a>
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="/">Página incial</a></li>
-							<li><a href="/about">Sobre</a></li>
-						</ul>
-					</div>
+		<div class="container">    
+			<div class="row">
+				<div class="col-lg-12 " align="center">
+					<a><img alt="Brand" height= "140" width="180"  class="img-rounded" src="/assets/logo.bmp"></a>    
 				</div>
-			</nav>
-		</header>
-		<div>
-		<div class="row">
-			<div class="col-lg-2 col-md-1 col-sm-0"></div>
-			<div class="subtitulo text-center col-lg-8 col-md-10 col-sm-0">
-				<h2>Bem-vindo ao portal sobre notícias, informações e dicas para alavancar o seu negócio.</h2>
+			</div>
+		</div>
+	
+		<nav class="navbar navbar-inverse navbar-collapse collapse">
+			<div class="navbar-header">
+				<a href="/">
+					<img id="logo-barra" alt="Brand" class="img-rounded" align="middle" src="/assets/logo.png" />
+				</a>
+			</div>
+		
+			<ul class="nav navbar-nav">
+				<li class="active menu"><a href="/">Página inicial</a></li>
+				<li class="menu"><a href="/about">Sobre</a></li>
+			</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
+				<div class="text-center col-lg-8 col-md-10 col-sm-0">
+					<h2 class="subtitulo">
+						<label>Bem-vindo ao portal sobre notícias, informações e dicas para alavancar o seu negócio.</label>
+					</h2>
+				</div>
+				
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
 			</div>
 			
-			<div class="col-lg-2 col-md-1 col-sm-0"></div>
-		</div>
-		
-		<div class="row">
-			<div class="col-lg-1"></div>
-
-			<div class="conteudo col-lg-6">					
-				<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="/assets/noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading">
-						<a href="/articles/1">
-							ERP - O que é e porque é tão importante para o seu negócio
+			<div class="row" style="margin-top: 30px;">
+				<!-- post 1 -->
+				<div class="conteudo col-lg-7">					
+					<div class="media item-conteudo">
+						<div class="media-left">
+							<a href="#">
+								<img height="30" width="40" class="media-object" 
+								src="/assets/erp-o-que-e-porque-e-tao-importante-para-o-seu-negocio-1.png" alt="Estrutura ERP">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<a class="text postLink" href="articles/1">
+									ERP - O que é e porque é tão importante para o seu negócio
+								</a>
+							</h4>
+						<p class="text postTeaser">As vantagens de se adotar um sistema ERP podem...</p>				    
+					</div>
+				</div>
+				<!-- post 2 -->
+				<div class="media item-conteudo">
+					<div class="media-left">
+						<a href="#">
+						  <img height="30" width="40" class="media-object" 
+						  src="/assets/por-que-treinar-e-capacitar-1.png" alt="Treinamento">
 						</a>
-					</h4>
-				    <p>ERP - O que é e porque é tão importante para o seu negócio</p>				    
-				  </div>				 
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">
+							<a class="text postLink" href="articles/2">
+								Por que treinar e capacitar?
+							</a>
+						</h4>	
+					<p class="text postTeaser">Apesar da constante dinamicidade apresentada...</p>				    
+					</div>				 
 				</div>
-				
-				<!--<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="/assets/noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading"><a href="about.html">headline Primeiro Conteúdo</a></h4>	
-				    <p>tipo uma chamanda do conteúdo, ou até mesmo as primeiras linhas</p>			    
-				  </div>				 
-				</div>	
-				<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="/assets/noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading"><a href="about.html">headline Primeiro Conteúdo</a></h4>
-				    <p>tipo uma chamanda do conteúdo, ou até mesmo as primeiras linhas</p>				    
-				  </div>				 
-				</div>	
-				<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading"><a href="about.html">headline Primeiro Conteúdo</a></h4>
-				    <p>tipo uma chamanda do conteúdo, ou até mesmo as primeiras linhas</p>				    
-				  </div>				 
-				</div>	
-				<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading"><a href="about.html">headline Primeiro Conteúdo</a></h4>	
-				    <p>tipo uma chamanda do conteúdo, ou até mesmo as primeiras linhas</p>			    
-				  </div>				 
-				</div>	
-				<div class="media" id="conteudo">
-				  <div class="media-left">
-				    <a href="#">
-				      <img height="30" width="40" class="media-object" src="noticia1.jpg" alt="Conteúdo 3">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				    <h4 class="media-heading"><a href="about.html">headline Primeiro Conteúdo</a></h4>	
-				    <p>tipo uma chamanda do conteúdo, ou até mesmo as primeiras linhas</p>			    
-				  </div>				 
-				</div>	-->	
-				
-
-				<!--<label class="titulo-conteudo">
-					Conteúdo
-				</label>
-				
-				<p class="text-center">
-					<strong>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Etiam rutrum ac orci in ornare. Nulla viverra a odio quis euismod. 
-						Nullam consectetur suscipit lacus ultrices convallis. 
-						Fusce fringilla, ante a molestie convallis, nulla ex placerat leo, at scelerisque felis mi vel lacus. 
-						Maecenas a massa nibh. Pellentesque ex leo, tristique id felis a, ornare euismod orci. 
-						Quisque eu elementum ligula, eget ornare arcu. Donec ac mauris nisl. 
-						Proin sagittis vestibulum fringilla. Duis in mattis dui. 
-						Ut est mauris, facilisis nec venenatis eu, tempor nec felis. 
-						Ut eu eros in orci tempor iaculis. Sed auctor urna non urna suscipit vulputate.
-					</strong>
-				</p>-->
+				<!-- post 3 -->
+				<div class="media item-conteudo">
+					<div class="media-left">
+						<a href="#">
+						  <img height="30" width="40" class="media-object" 
+						  src="/assets/dicas-para-ter-um-negocio-investindo-pouco-1.png" alt="Negócios">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">
+							<a class="text postLink" href="/articles/3">
+								Dicas para ter um negócio investindo pouco
+							</a>
+						</h4>	
+						<p class="text postTeaser">Vamos apresentar algumas dicas interessantes, que vão...</p>			    
+					</div>				 
+				</div>
+								
+				<div class="col-lg-2"></div>
 			</div>
-
-			<div class="col-lg-1"></div>
-
-			<div class="col-lg-4 text-right">
-				<div class="form text-center">
-					<h4>Receba notícias diretamente no seu e-mail</h4>
-					<input type="text" id="nome" name="nome" class="form-item text-center" placeholder="Nome Completo" />
-					<br/>
-					<input type="text" id="email" name="email" class="form-item text-center" placeholder="Email Corporativo" />
-					<br/>
-					<strong>
-						<input type="button" id="confirmar" onclick="validarDados()" class="form-button btn-success text-center" name="confirmar" value="Confirmar" />
-					</strong>
+			
+			<div class="row">
+				<div class="col-lg-1 text-right"></div>
+				
+				<div style="margin-left: 50px;">
+					<div class="col-lg-5 text-center">
+						<div class="form text-center">
+							<h4 class="text invite">Receba notícias, posts e informações diretamente no seu e-mail</h4>
+							<input type="text" id="nome" name="nome" class="invite form-item text-center" placeholder="Nome Completo" />
+							<br/>
+							<input type="text" id="email" name="email" class="invite form-item text-center" placeholder="Email Corporativo" />
+							<br/>
+							<strong>
+								<input type="button" id="confirmar" onclick="validarDados()" class="invite form-button btn-success text-center" name="confirmar" value="Confirmar" />
+							</strong>
+						</div>
+					</div>
 				</div>
-			</div>			
+				<hr>
+				<div class="container">    
+					<div class="row">
+						<div class="col-lg-12 " align="center">
+							<a><img style="margin-top: 100px;" alt="Brand" height= "100" width="150"  class="img-rounded" src="/assets/logo.bmp"></a>    
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
