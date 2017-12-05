@@ -1,9 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Adminstração</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="icon" href="/assets/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+	<style>
+		.card-size{
+			width: 40rem;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.center{
+			margin: auto;
+			padding: 10px;
+		}
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110678226-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-110678226-1');
+	</script> -->
+
+	<title>Adminstração - TN</title>
 </head>
 <body>
-	<h1>Administração</h1>
+	
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Administração</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about">Sobre</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <!-- Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<a><img alt="Brand" height= "300" width="500" class="img-fluid rounded mx-auto d-block" src="/assets/logo-sem-fundo.png"></a>
+			</div>			
+			<div class="col-sm-12">
+				<div class="card card-size">
+					<div class="card-header">
+						<h2>Leads Atuais</h2>
+					</div>
+					<div class="card-body">
+						<h3 class="card-title" id="info-lead"> -- </h3>
+						<a href="#" class="btn btn-primary btn-lg">Download CSV</a>
+					</div>
+				</div>				
+			</div>
+		</div>		
+	</div>
+
+	<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="copyright text-muted text-center">Copyright &copy; TransformaNegocios.com 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+	<script src="/js/adminPanel.js"></script>
 </body>
 </html>
