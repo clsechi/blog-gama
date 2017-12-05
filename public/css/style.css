@@ -35,6 +35,12 @@ body {
 	padding-top: 5px;
 }
 
+.invisible{
+    opacity: 0;
+    transition: visibility 0s 5s, opacity 5s linear;
+    display: none;
+}
+
 .sobre {
 	font-size: 22px;
 }
@@ -75,6 +81,13 @@ body {
 .invite {
 	font-weight: bold;
 	font-size: 18px;
+	color: white;
+}
+
+.inputText {
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .text-center {
@@ -82,20 +95,13 @@ body {
 }
 
 .form {
-	border: 2px solid #2c2f3c;
-	padding: 10px;
-}
-
-.form-item {
-	margin: 5px;
-	border-radius: 20px;
-	width: 75%;
+	padding: 20px;
+	background-color: #1f9670;
 }
 
 .form-button {
-	margin: 5px;
-	width: 25%;
-	border-radius: 20px;
+	font-weight: bold;
+	font-size: 115%;
 }
 
 .conteudo {

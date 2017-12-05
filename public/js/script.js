@@ -1,17 +1,24 @@
+var btnConfirmar = document.getElementById('confirmar');
+var msgSucess = document.getElementById('sucess');
+
 function validarDados(){  
 	if((document.getElementById("nome").value.length >= 3)) {
 		if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){  
 			
-			sendData(nome.value, email.value);	
+			btnConfirmar.classList.add('invisible');
+			msgSucess.classList.remove('invisible');
+
+			sendData(nome.value, email.value);
+
 			return true;
 		}
 		else {
-			alert("Informe um e-mail válido!!!"); 
+			alert("Informe um e-mail válido!"); 
 			return false;					
 		}
 	}
 	else {
-		alert("O campo nome deve ser preenchido!!!"); 
+		alert("O campo nome deve ser preenchido!"); 
 		return false;
 	}
 	return false;
@@ -19,7 +26,7 @@ function validarDados(){
 
 function sendData(nome, email) {
 	
-	var data = {name: nome, email: email};
+	var clientInfo = {name: nome, email: email};
 
 	var dados = new XMLHttpRequest();
 
@@ -29,11 +36,29 @@ function sendData(nome, email) {
 
 	dados.setRequestHeader("Content-Type", "application/json");
 
+	dados.responseType = 'blob';
+
 	dados.onreadystatechange = function (){
 		if (this.readyState == 4 && this.status == 200) {
-			console.log('done');
+			// Create a new Blob object using the 
+			//response data of the onload object
+			var blob = new Blob([this.response], {type: 'image/pdf'});
+			//Create a link element, hide it, direct 
+			//it towards the blob, and then 'click' it programatically
+			let a = document.createElement("a");
+			a.style = "display: none";
+			document.body.appendChild(a);
+			//Create a DOMString representing the blob 
+			//and point the link element towards it
+			let url = window.URL.createObjectURL(blob);
+			a.href = url;
+			a.download = 'Dicas para seu negócio.pdf';
+			//programatically click the link to trigger the download
+			a.click();
+			//release the reference to the file by revoking the Object URL
+			window.URL.revokeObjectURL(url);
 		}
 	}
 
-	dados.send(JSON.stringify(data));
+	dados.send(JSON.stringify(clientInfo));
 }

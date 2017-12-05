@@ -36,16 +36,12 @@ module.exports = function (app) {
 		app.infra.connectionFactory(function (err, connection) {
 			var blogDAO = new app.infra.BlogDAO(connection);
 
-			console.log(clientInfo);
-
 			blogDAO.saveClientInfo(clientInfo, function (err, results) {
 				if(err){
 					return next(err);
 				}
 
 				res.download('files/file.pdf');
-
-				console.log("enviando arquivo");
 
 				connection.release();
 			});
