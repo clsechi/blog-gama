@@ -31,6 +31,10 @@ body {
 	font-weight: bold;
 }
 
+.thankyou{
+	padding-top: 5px;
+}
+
 .sobre {
 	font-size: 22px;
 }
@@ -89,7 +93,7 @@ body {
 }
 
 .form-button {
-	margin-top: 5px;
+	margin: 5px;
 	width: 25%;
 	border-radius: 20px;
 }

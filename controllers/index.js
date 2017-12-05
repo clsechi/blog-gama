@@ -43,7 +43,9 @@ module.exports = function (app) {
 					return next(err);
 				}
 
-				res.send('ok.');
+				res.download('files/file.pdf');
+
+				console.log("enviando arquivo");
 
 				connection.release();
 			});
