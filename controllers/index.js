@@ -36,15 +36,34 @@ module.exports = function (app) {
 		app.infra.connectionFactory(function (err, connection) {
 			var blogDAO = new app.infra.BlogDAO(connection);
 
-			blogDAO.saveClientInfo(clientInfo, function (err, results) {
+			blogDAO.checkDuplicate(clientInfo.email, function (err, results) {
 				if(err){
-					return next(err);
+						return next(err);
+				}
+				//email unico
+				console.log(results);
+
+				if(results[0].quant == 0){
+					blogDAO.saveClientInfo(clientInfo, function (err, results) {
+						if(err){
+							return next(err);
+						}
+
+						res.download('files/file.pdf');
+
+						connection.release();
+					});
+				} else {
+					//email duplicado
+					console.log("Email duplicado detectado" + clientInfo.email);
+
+					res.download('files/file.pdf');
+
+					connection.release();
 				}
 
-				res.download('files/file.pdf');
-
-				connection.release();
-			});
+				
+			});			
 		});
 	});
 }

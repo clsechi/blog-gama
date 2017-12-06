@@ -23,6 +23,10 @@
 			margin: auto;
 			padding: 10px;
 		}
+		.size{
+			font-size: 40px;
+			font-weight: bold;
+		}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics
@@ -70,10 +74,11 @@
 						<h2>Leads Atuais</h2>
 					</div>
 					<div class="card-body">
-						<h3 class="card-title" id="info-lead"> -- </h3>
-						<a href="#" class="btn btn-primary btn-lg">Download CSV</a>
+						<span class="card-title size" id="info-lead"> -- </span>
+						<button onclick="getLeads();" class="btn btn-outline-primary btn-lg float-sm-right">Atualizar</button>
 					</div>
-				</div>				
+				</div>
+				<a href="#" class="btn btn-outline-success btn-lg" id="get-csv">Download CSV</a>
 			</div>
 		</div>		
 	</div>
