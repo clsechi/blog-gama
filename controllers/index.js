@@ -40,8 +40,6 @@ module.exports = function (app) {
 				if(err){
 						return next(err);
 				}
-				//email unico
-				console.log(results);
 
 				if(results[0].quant == 0){
 					blogDAO.saveClientInfo(clientInfo, function (err, results) {
@@ -55,7 +53,7 @@ module.exports = function (app) {
 					});
 				} else {
 					//email duplicado
-					console.log("Email duplicado detectado" + clientInfo.email);
+					console.log("Email duplicado detectado " + clientInfo.email);
 
 					res.download('files/file.pdf');
 

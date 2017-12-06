@@ -1,32 +1,30 @@
 var btnConfirmar = document.getElementById('confirmar');
 var msgSucess = document.getElementById('sucess');
+var radioAll = document.getElementsByName('tipo');
 
-function validarDados(){  
-	if((document.getElementById("nome").value.length >= 3)) {
-		if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){  
-			
-			btnConfirmar.classList.add('invisible');
-			msgSucess.classList.remove('invisible');
+function validarDados(){
 
-			sendData(nome.value, email.value);
-
-			return true;
-		}
-		else {
-			alert("Informe um e-mail válido!"); 
-			return false;					
-		}
-	}
-	else {
-		alert("O campo nome deve ser preenchido!"); 
+	if(!radioAll[0].checked && !radioAll[1].checked){
+		alert('O campo pessoa física/jurídica deve ser preenchido');
 		return false;
+	} else if((document.getElementById('nome').value.length < 3)) {
+		alert("O campo nome deve ser preenchido!");
+		return false;
+	} else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))){
+		alert("Informe um e-mail válido!");
+		return false;
+	} else {
+
+		btnConfirmar.classList.add('invisible');
+		msgSucess.classList.remove('invisible');
+
+		sendData(nome.value, email.value);
 	}
-	return false;
 }
 
 function sendData(nome, email) {
 	
-	var clientInfo = {name: nome, email: email};
+	var clientInfo = {name: nome, email: email, type: getRadio()};
 
 	var dados = new XMLHttpRequest();
 
@@ -61,4 +59,13 @@ function sendData(nome, email) {
 	}
 
 	dados.send(JSON.stringify(clientInfo));
+}
+
+//checa se selecionou PJ ou PF
+function getRadio() {
+	if(radioAll[0].checked){
+		return "PF";
+	} else {
+		return "PJ";
+	}
 }

@@ -3,7 +3,7 @@ function BlogDAO(connection) {
 }
 
 BlogDAO.prototype.saveClientInfo = function(clientInfo, callback) {
-	this._connection.query('INSERT INTO clients (name, email, ip, data) VALUES (?, ?, ?, ?);', [clientInfo.name, clientInfo.email, clientInfo.ip, clientInfo.time], callback);
+	this._connection.query('INSERT INTO clients (name, email, ip, data, client_type) VALUES (?, ?, ?, ?, ?);', [clientInfo.name, clientInfo.email, clientInfo.ip, clientInfo.time, clientInfo.type], callback);
 };
 
 BlogDAO.prototype.countLeads = function(callback) {
