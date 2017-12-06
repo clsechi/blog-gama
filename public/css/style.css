@@ -1,8 +1,13 @@
 /*geral*/	
 
 body {
-	font-family: Open Sans !important;
 	background-color: #f7f7f7 !important;
+	overflow-x: hidden;
+}
+
+.box {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .navbar-inverse {
@@ -29,6 +34,11 @@ body {
 .navbar-inverse .navbar-nav>.active>a:hover {
 	background: #9c9999 !important;
 	font-weight: bold;
+}
+
+
+.logoMenu {
+	margin: 5px;
 }
 
 .thankyou{
@@ -71,6 +81,7 @@ body {
 }
 
 .postLink {
+	font-weight: bold;
 	font-size: 24px;
 }
 
@@ -88,6 +99,12 @@ body {
 	color: black;
 	font-weight: bold;
 	font-size: 18px;
+}
+
+.radioText {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 .text-center {
@@ -126,6 +143,7 @@ body {
 .tituloPost {
 	font-size: 36px;
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .introducaoPost {
@@ -136,6 +154,7 @@ body {
 
 .subtituloPost {
 	text-decoration: underline;
+	font-weight: bold;
 	font-size: 24px;
 	margin-top: 35px !important;
 }

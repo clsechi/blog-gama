@@ -2,6 +2,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+		<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
@@ -12,34 +18,22 @@
 		
 		<link rel="icon" href="/assets/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-				
-		<script src="/js/script.js"></script>
 	</head>
 	<body>
-		<div class="container">    
-			<div class="row">
-				<div class="col-lg-12 " align="center">
-					<a><img alt="Brand" height= "140" width="180"  class="img-rounded" src="/assets/logo.bmp"></a>    
-				</div>
-			</div>
-		</div>
-	
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="./index.html">
-						<img id="logo-barra" alt="Brand" class="img-rounded" align="middle" src="/assets/logo.png" />
-					</a>
+					<a href="/">
+						</a><a><img class="logoMenu img-rounded" alt="Brand" height="40" width="65" src="/assets/logo.bmp"></a>
+					
 				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
+				<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
 					<ul class="nav navbar-nav">
 						<li class="menu"><a href="/">Página inicial</a></li>
 						<li class="active menu"><a href="/about">Sobre</a></li>
@@ -50,8 +44,8 @@
 	
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2 col-md-1 col-sm-0"></div>
-				<div class="col-lg-10 col-md-11 col-sm-12">
+				
+				<div class="col-lg-11 col-md-11 col-sm-12">
 					<div class="sobre">
 						<h2>
 							<label>Sobre o nosso blog</label>
@@ -61,9 +55,9 @@
 			</div>
 			
 			<div class="row" style="margin-top: 30px;">
-				<div class="col-lg-1"></div>
 				
-				<div class="col-lg-5 col-md-5 col-sm-5">
+				
+				<div class="col-lg-5 col-md-5 col-sm-5" style="margin-right: 50px;">
 					<div class="sobre">
 						<p>
 							O objetivo do nosso blog é transmitir informações, notícias, tendências,
@@ -78,16 +72,74 @@
 						</p>
 					</div>
 				</div>
-			</div>
-			<hr>
-
-			<div class="container">    
+				
 				<div class="row">
-					<div class="col-lg-12 " align="center">
-						<a><img style="margin-top: 30px;" alt="Brand" height= "100" width="150"  class="img-rounded" src="/assets/logo.bmp"></a>    
+					<div>
+						<div class="col-lg-6 col-md-6 col-sm-6 text-center box">
+							<div class="form text-center">
+								<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
+								<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo">
+								<br>
+								<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail Corporativo">
+								<br>
+								<div style="background-color: #75a595;" class="form-control">
+									<label class="radio-inline">
+									  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
+									</label>
+								</div>
+								<br>
+								<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
+								<br>
+								<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+                <hr>
+                <div class="container">    
+                    <div class="row">
+                        <div class="col-lg-12" align="center">
+                            <a><img style="margin-top: 20px;" alt="Brand" height="100" width="150" class="img-rounded" src="/assets/logo.bmp"></a>    
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+	    <footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 mx-auto">
+						<ul class="list-inline text-center">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/Transforma-Neg%C3%B3cios-174175363170072/" target="_blank">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/transformanegocios/" target="_blank">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+						
+						<p class="copyright text-muted text-center">Copyright © TransformaNegocios.com 2017</p>
 					</div>
 				</div>
 			</div>
-		</div>
+	    </footer>
+		
+		<script src="/js/script.js"></script>
+	
 	</body>
 </html>
