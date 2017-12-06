@@ -27,6 +27,11 @@
 			font-size: 40px;
 			font-weight: bold;
 		}
+		.invisible{
+			visibility: hidden;
+		    opacity: 0;
+		    transition: visibility 0s 5s, opacity 5s linear;		    
+		}
 	</style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics
@@ -41,8 +46,7 @@
 
 	<title>Adminstração - TN</title>
 </head>
-<body>
-	
+<body>	
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -67,19 +71,28 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<a><img alt="Brand" height= "300" width="500" class="img-fluid rounded mx-auto d-block" src="/assets/logo-sem-fundo.png"></a>
-			</div>			
-			<div class="col-sm-12">
-				<div class="card card-size">
-					<div class="card-header">
-						<h2>Leads Atuais</h2>
-					</div>
-					<div class="card-body">
-						<span class="card-title size" id="info-lead"> -- </span>
-						<button onclick="getLeads();" class="btn btn-outline-primary btn-lg float-sm-right">Atualizar</button>
-					</div>
-				</div>
-				<a href="#" class="btn btn-outline-success btn-lg" id="get-csv">Download CSV</a>
 			</div>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-2">
+				<h4>Leads Atuais:</h4>
+			</div>
+			<div class="col-sm-2">
+				<p class="text-success text-center invisible" id="update">Leads Atualizados!</p>
+			</div>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4"></div>	
+			<div class="col-sm-2">
+				<span class="text-center size" id="info-lead"> -- </span>
+			</div>
+			<div class="col-sm-2">
+				<button onclick="getLeads();" class="btn btn-outline-primary btn-lg float-right">Atualizar</button>
+			</div>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-5"></div>
+			<div class="col-sm-2">
+			<a href="#" class="btn btn-outline-success btn-lg" id="get-csv">Download CSV</a>
+			</div>
+			<div class="col-sm-5"></div>			
 		</div>		
 	</div>
 

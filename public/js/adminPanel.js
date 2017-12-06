@@ -1,4 +1,5 @@
 var infoLead = document.getElementById('info-lead');
+var update = document.getElementById('update');
 
 function getLeads() {
 
@@ -22,7 +23,11 @@ function getLeads() {
 
 function updateLeads(leads) {
 
-	console.log('leads atualizados');
+	update.classList.remove('invisible');
+
+	setTimeout(function(){
+		update.classList.add('invisible');
+	}, 3000);
 
 	infoLead.textContent = leads[0].leads; //define numero de leads.
 }
