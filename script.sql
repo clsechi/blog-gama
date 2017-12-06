@@ -4,6 +4,7 @@ CREATE TABLE clients (
 	email VARCHAR(50) NOT NULL,
 	ip VARCHAR(20) NOT NULL,
 	data DATETIME NOT NULL,
+	client_type CHAR(2),
 	PRIMARY KEY (clientID)
 );
 
