@@ -40,7 +40,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a><img class="logoMenu img-rounded" alt="Brand" height= "40" width="65"  class="img-rounded" src="/assets/logo.bmp"></a>
+					<a href="/">
+						<img class="logoMenu img-rounded" alt="Brand" height="40" width="65" src="/assets/logo.bmp">
+					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
@@ -62,9 +64,39 @@
 				
 				<div class="col-lg-2 col-md-1 col-sm-0"></div>
 			</div>
+			
+			<div class="row">
+				<div class="col-lg-2"></div>
+				
+				<div class="col-lg-8 text-center">
+					<div class="form text-center">
+						<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
+						<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo" />
+						<br>
+						<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo" />
+						<br>
+						<div style="background-color: #75a595;" class="form-control">
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
+							</label>
+						</div>
+						<br>
+						<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
+						<br>
+						<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
+					</div>
+				<div>
+				
+				<div class="col-lg-2"></div>
+			</div>
+		</div>
 		
+		<div class="container">
 			<div class="row" style="margin-top: 30px;">
-				<div class="conteudo col-lg-7">					
+				<div class="conteudo col-lg-12" style="padding: 20px;">					
 					<div class="media item-conteudo">
 						<div class="media-left">
 							<a href="#">
@@ -177,7 +209,7 @@
 							</p>			    
 						</div>				 
 					</div>
-
+					
 					<div class="media item-conteudo">
 						<div class="media-left">
 							<a href="#">
@@ -188,15 +220,14 @@
 						<div class="media-body">
 							<h4 class="media-heading">
 								<a class="text postLink" href="/articles/6">
-									Como a geração de conteúdo pode impulsionar seu negócio
+									Como a geração de conteúdo impulsiona seu negócio
 								</a>
 							</h4>	
 							<p class="text postTeaser">
-								Essas são formas que você mesmo pode criar o conteúdo de sua 
-								empresa e agregar muito valor ao seu negócio e alcançar sua 
-								auto suficiência nesse quesito, afinal, auto suficiência em 
-								certos segmentos, permite que possa ser investido mais 
-								tempo em outros.
+								Em um mundo corporativo tão globalizado como temos hoje, 
+								manter uma boa relação com clientes, parceiros, fornecedores 
+								e com as próprias equipes de seu negocio é fundamental. 
+								E como uma relação desse tipo pode ser cultivada?
 							
 								<br/>
 								<label>
@@ -236,8 +267,8 @@
 								</label>
 							</p>			    
 						</div>				 
-					</div>								
-					
+					</div>
+
 					<div class="media item-conteudo">
 						<div class="media-left">
 							<a href="#">
@@ -265,52 +296,25 @@
 									<a href="/articles/8">Ler mais</a>
 								</label>
 							</p>			    
-						</div>				 
+						</div>
 					</div>
+					
 					<div class="col-lg-2"></div>
-				</div>
-			
-				<div class="row">
-					<div class="col-lg-1 text-right"></div>
-					
-					<div style="margin-left: 50px;">
-						<div class="col-lg-5 text-center">
-							<div class="form text-center">
-								<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
-								<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo" />
-								<br>
-								<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo" />
-								<br>
-								<div style="background-color: #75a595;" class="form-control">
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
-									</label>
-								</div>
-								<br>
-								<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
-								<br>
-								<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
-							</div>
-						</div>
-					</div>
-					
-					<hr>
-					<div class="container">    
-						<div class="row">
-							<div class="col-lg-12" align="center">
-								<a><img style="margin-top: 20px;" alt="Brand" height= "100" width="150"  class="img-rounded" src="/assets/logo.bmp"></a>    
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- Footer -->
 	    <footer>
+			<hr style="margin: 5px;">
+			<div class="container">    
+				<div class="row">
+					<div class="col-lg-12" align="center">
+						<a><img style="margin-top: 5px;" alt="Brand" height= "100" width="150"  class="img-rounded" src="/assets/logo.bmp"></a>    
+					</div>
+				</div>
+			</div>
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 mx-auto">
