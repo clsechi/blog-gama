@@ -1,4 +1,6 @@
 module.exports = function (app) {
+
+	//portuguese
 	
 	app.get('/', function (req, res) {
 		res.render('index');
@@ -13,6 +15,24 @@ module.exports = function (app) {
 
 		res.render('articles/' + id);
 	});
+
+	//english
+
+	app.get('/en', function (req, res) {
+		res.render('en/index');
+	});
+
+	app.get('/en/about', function (req, res) {
+		res.render('en/about');
+	});
+
+	app.get('/en/articles/:id', function(req, res){
+		var id = req.params.id;
+
+		res.render('en/articles/' + id);
+	});
+
+	//post function
 
 	app.post('/saveInfo', function (req, res, next) {
 
