@@ -52,24 +52,67 @@
 			</div>
 		</nav>
 		
+		
 		<div class="container">
 			<div class="row">
-				<div id="tituloConteudo" class="subtitle text-center col-lg-6" align="center">
-					<h2 class="text tituloPost">A importância da Gestão de Controle de Acesso no negócio</h2>
-				</div>			
-			</div>	
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
+				
+				<div class="text-center col-lg-8 col-md-10 col-sm-0">
+					<h2 class="text-center tituloPost">A importância da Gestão de Controle de Acesso no negócio</h2>
+				</div>
 
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6">
-					<img src="/assets/a-importancia-da-gestao-de-controle-de-acesso-no-negocio-1.png" class="img-responsive img-fluid" alt="Negócios" width="600" height="300">
-					<hr/>
-					
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>			
+			</div>	
+		</div>
+		
+		<div class="container">
+			<div class="row" style="margin-bottom: 20px; margin-top: 40px;">
+				<div class="conteudo col-lg-6">					
 					<p class="introducaoPost">
 						Empresas investem milhões todos os anos em segurança da informação e 
 						isso engloba também o controle de acesso e por que é tão 
 						importante sua empresa possuir uma solução desse tipo?
 					</p>
-					
+				</div>
+				
+				<div class="conteudo col-lg-5">					
+					<img src="/assets/a-importancia-da-gestao-de-controle-de-acesso-no-negocio-1.png" class="img-responsive img-fluid" alt="Negócios" width="600" height="300">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-2"></div>
+				
+				<div class="col-lg-8 text-center">
+					<div class="form text-center">
+						<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
+						<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo">
+						<br>
+						<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo">
+						<br>
+						<div style="background-color: #75a595;" class="form-control">
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
+							</label>
+						</div>
+						<br>
+						<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
+						<br>
+						<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
+					</div>
+				<div>
+				
+				<div class="col-lg-2"></div>
+			</div>
+		</div>
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="conteudo col-lg-12" style="padding: 20px;">
 					<h3 class="subtituloPost">Segurança</h3>
 					<p class="paragrafoPost">
 						Uma empresa precisa de um minimo de segurança para que tudo 
@@ -85,15 +128,15 @@
 					</p>
 					
 					<p class="paragrafoPost">
-							Definir horarios e tempos de acesso é importantissimo, 
-							afinal, se um funcionário entra de férias, não tem porque 
-							ele acessar o sistema, se sua empresa em uma auditoria 
-							é pega com algo do tipo, um funcionario de férias trabalhando, 
-							quem se prejudica é você e seu negócio. 
-							Fora casos mais extremos onde o funcionario sai d
-							a empresa e seu aceso continua la pra sempre e pode 
-							ser utilizado a vontade, um sistema adequado, 
-							desativa ou trancas os acessos de imediato quando necessário.
+						Definir horarios e tempos de acesso é importantissimo, 
+						afinal, se um funcionário entra de férias, não tem porque 
+						ele acessar o sistema, se sua empresa em uma auditoria 
+						é pega com algo do tipo, um funcionario de férias trabalhando, 
+						quem se prejudica é você e seu negócio. 
+						Fora casos mais extremos onde o funcionario sai d
+						a empresa e seu aceso continua la pra sempre e pode 
+						ser utilizado a vontade, um sistema adequado, 
+						desativa ou trancas os acessos de imediato quando necessário.
 					</p>
 					
 					<p class="paragrafoPost">
@@ -128,46 +171,21 @@
 						Artigo escrito por Victor Hussein em 04 de Dezembro de 2017.<br />
 						Publicado em 04 de Dezembro de 2017 às 17h:20min.
 					</p>					
-				</div>
-					
-				<div class="row">
-					<div>
-						<div class="col-lg-6 col-md-6 col-sm-6 text-center box">
-							<div class="form text-center">
-								<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
-								<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo">
-								<br>
-								<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo">
-								<br>
-								<div style="background-color: #75a595;" class="form-control">
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
-									</label>
-								</div>
-								<br>
-								<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
-								<br>
-								<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
-							</div>
-						</div>
-					</div>
-				</div>
-                <hr>
-                <div class="container">    
-                    <div class="row">
-                        <div class="col-lg-12" align="center">
-                            <a><img style="margin-top: 20px;" alt="Brand" height="100" width="150" class="img-rounded" src="/assets/logo.bmp"></a>    
-                        </div>
-                    </div>
                 </div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-	    <footer>
+		<footer>
+			<hr style="margin: 5px;">
+			<div class="container">    
+				<div class="row">
+					<div class="col-lg-12" align="center">
+						<a><img style="margin-top: 5px;" alt="Brand" height="100" width="150" class="img-rounded" src="/assets/logo.bmp"></a>    
+					</div>
+				</div>
+			</div>
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 mx-auto">
@@ -194,9 +212,8 @@
 					</div>
 				</div>
 			</div>
-	    </footer>
+		</footer>
 		
 		<script src="/js/script.js"></script>
-		
 	</body>
 </html>
