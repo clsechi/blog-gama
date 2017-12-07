@@ -52,24 +52,68 @@
 			</div>
 		</nav>
 		
+		
 		<div class="container">
 			<div class="row">
-				<div id="tituloConteudo" class="subtitle text-center col-lg-6" align="center">
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
+				
+				<div class="text-center col-lg-8 col-md-10 col-sm-0">
 					<h2 class="text-center tituloPost">Por que treinar e capacitar?</h2>
-				</div>			
-			</div>	
+				</div>
 
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6">
-					<img src="/assets/por-que-treinar-e-capacitar-1.png" class="img-responsive img-fluid" alt="Treinamento" width="600" height="300" />
-					<hr>
-					<p class="introducaoPost">
-						Apesar da constante dinamicidade apresentada pelo mercado e do contínuo avanço da tecnologia. 
-						O maior valor da empresa, e o que define como será o seu futuro, ainda são as pessoas.
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>			
+			</div>	
+		</div>
+		
+		<div class="container">
+			<div class="row" style="margin-bottom: 20px; margin-top: 40px;">
+				<div class="conteudo col-lg-6">					
+					<p class="paragrafoPost">
+						Apesar da constante dinamicidade apresentada pelo mercado e do contínuo avanço da tecnologia, 
+						o maior valor da empresa, e o que define como será o seu futuro, ainda são as pessoas.
 						Portanto, é primordial para um bom negócio entender as aptidões e deficiências do time
 						e fazer um investimento que promova desenvolvimento e superação. 
 						Um time bem treinado é a forma mais eficiente de se ter sucesso nos negócios.
-					</p>	
+					</p>
+				</div>
+				
+				<div class="conteudo col-lg-5">					
+					<img src="/assets/por-que-treinar-e-capacitar-1.png" class="img-responsive img-fluid" alt="Treinamento" width="600" height="300" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-2"></div>
+				
+				<div class="col-lg-8 text-center">
+					<div class="form text-center">
+						<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
+						<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo">
+						<br>
+						<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo">
+						<br>
+						<div style="background-color: #75a595;" class="form-control">
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
+							</label>
+						</div>
+						<br>
+						<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
+						<br>
+						<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
+					</div>
+				<div>
+				
+				<div class="col-lg-2"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="conteudo col-lg-12" style="padding: 20px;">					
 					
 					<h3 class="subtituloPost">Educação Corporativa</h3>
 					<p class="paragrafoPost">
@@ -131,46 +175,21 @@
 						Artigo escrito por Lucas Celestino em 03 de Dezembro de 2017.<br />
 						Publicado em 03 de Dezembro de 2017 às 22h:17min.
 					</p>					
-				</div>
-					
-				<div class="row">
-					<div>
-						<div class="col-lg-6 col-md-6 col-sm-6 text-center box">
-							<div class="form text-center">
-								<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
-								<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo">
-								<br>
-								<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo">
-								<br>
-								<div style="background-color: #75a595;" class="form-control">
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
-									</label>
-									<label class="radio-inline">
-									  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
-									</label>
-								</div>
-								<br>
-								<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
-								<br>
-								<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
-							</div>
-						</div>
-					</div>
-				</div>
-                <hr>
-                <div class="container">    
-                    <div class="row">
-                        <div class="col-lg-12" align="center">
-                            <a><img style="margin-top: 20px;" alt="Brand" height="100" width="150" class="img-rounded" src="/assets/logo.bmp"></a>    
-                        </div>
-                    </div>
-                </div>
+			    </div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-	    <footer>
+		<footer>
+			<hr style="margin: 5px;">
+			<div class="container">    
+				<div class="row">
+					<div class="col-lg-12" align="center">
+						<a><img style="margin-top: 5px;" alt="Brand" height="100" width="150" class="img-rounded" src="/assets/logo.bmp"></a>    
+					</div>
+				</div>
+			</div>
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 mx-auto">
@@ -197,9 +216,8 @@
 					</div>
 				</div>
 			</div>
-	    </footer>
+		</footer>
 		
 		<script src="/js/script.js"></script>
-		
 	</body>
 </html>
