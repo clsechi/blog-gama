@@ -24,7 +24,7 @@ function validarDados(){
 
 function sendData(nome, email) {
 	
-	var clientInfo = {name: nome, email: email, type: getRadio()};
+	var clientInfo = {name: nome, email: email, type: getRadio(), pathname: location.pathname};
 
 	var dados = new XMLHttpRequest();
 
@@ -50,7 +50,12 @@ function sendData(nome, email) {
 			//and point the link element towards it
 			let url = window.URL.createObjectURL(blob);
 			a.href = url;
-			a.download = 'Dicas para seu negócio.pdf';
+
+			if (location.pathname == "/interviews" ) {
+				a.download = 'Entrevista Exclusiva com Thaís Nobre.pdf';
+			} else {
+				a.download = 'Dicas para seu negócio.pdf';	
+			}			
 			//programatically click the link to trigger the download
 			a.click();
 			//release the reference to the file by revoking the Object URL

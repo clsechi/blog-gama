@@ -16,6 +16,10 @@ module.exports = function (app) {
 		res.render('articles/' + id);
 	});
 
+	app.get('/interviews', function(req, res){
+		res.render('interviews/entrevista-exclusiva-Thais-Nobre-criadora-Se-vira-Mulher');
+	});
+
 	//english
 
 	app.get('/en', function (req, res) {
@@ -53,6 +57,12 @@ module.exports = function (app) {
 
 		clientInfo.time = new Date().toString();
 
+		var filePath = 'files/file.pdf'
+
+		if(clientInfo.pathname == "/interviews"){
+			filePath = 'files/file2.pdf'
+		}
+
 		app.infra.connectionFactory(function (err, connection) {
 			var blogDAO = new app.infra.BlogDAO(connection);
 
@@ -67,7 +77,7 @@ module.exports = function (app) {
 							return next(err);
 						}
 
-						res.download('files/file.pdf');
+						res.download(filePath);
 
 						connection.release();
 					});
@@ -75,7 +85,7 @@ module.exports = function (app) {
 					//email duplicado
 					console.log("Email duplicado detectado " + clientInfo.email);
 
-					res.download('files/file.pdf');
+					res.download(filePath);
 
 					connection.release();
 				}

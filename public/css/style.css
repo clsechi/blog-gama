@@ -142,7 +142,7 @@ body {
 /* posts */
 .tituloPost {
 	font-size: 36px;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	font-weight: bold;
 }
 
