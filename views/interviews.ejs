@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+		<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<title>Transforma Negócios</title>
+
+		<meta charset="utf-8" name="description" content="Portal sobre notícias, informações e dicas para alavancar o seu negócio">
+		<meta http-equiv="content-language" content="pt-br">
+		<meta name="keywords" content="erp, dicas, negócios, startup, PMBOK">
+		
+		<link rel="icon" href="/assets/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110678226-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-110678226-1');
+		</script>
+
+	</head>
+	<body>	
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/">
+						<img class="logoMenu img-rounded" alt="Brand" height="40" width="65" src="/assets/logo.bmp">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="menu"><a href="/">Página inicial</a></li>
+						<li class="menu"><a href="/about">Sobre</a></li>
+						<li class="active menu"><a href="/interviews">Entrevistas</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/interviews">PT</a></li>
+						<li><a href="/en/intervies">EN</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
+				<div class="text-center col-lg-8 col-md-10 col-sm-0">
+					<h1 class="title">Transforma Negócios</h1>
+					<h3 class="">Acompanhe entrevistas e matérias exclusivas</h3>
+				</div>
+				
+				<div class="col-lg-2 col-md-1 col-sm-0"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row" style="margin-top: 30px;">
+				<div class="conteudo col-lg-12" style="padding: 20px;">					
+					<div class="media item-conteudo">
+						<div class="media-left">
+							<a href="#">
+								<img height="100" width="120" class="media-object" 
+								src="/assets/entrevista-exclusiva-Thais-Nobre-criadora-Se-vira-Mulher-1.png" alt="Projeto Se vira, Mulher">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<a class="text postLink" href="/interviews/entrevista-exclusiva-Thais-Nobre-criadora-Se-vira-Mulher">
+									Entrevista exclusiva com Thaís Nobre, criadora do  projeto "Se vira, Mulher"
+								</a>
+							</h4>
+							<p class="text postTeaser">
+								Sou a Thais Nobre, tenho 24 anos e sou Engenheira de Controle e Automação. 
+								Há exatos 10 meses criei o Se Vira, Mulher!, 
+								cuja principal atividade é a realização de mini-cursos de 
+								manutenção residencial básica para mulheres, ou seja, 
+								somos mulheres que ensinam mulheres a fazerem coisas 
+								como trocar um chuveiro, uma tomada ou instalar uma prateleira.
+								
+								<br/>
+								<label>
+									<a href="/interviews/entrevista-exclusiva-Thais-Nobre-criadora-Se-vira-Mulher">Ler mais</a>
+								</label>
+							</p>				    
+						</div>
+					</div>
+
+					<div class="col-lg-2"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				
+				<div class="col-lg-8 text-center">
+					<div class="form text-center">
+						<h4 class="text invite">Deseja receber dicas de como criar um negócio investindo pouco?</h4>
+						<input type="text" id="nome" name="nome" class="inputText form-control text-center" placeholder="Nome Completo" />
+						<br>
+						<input type="text" id="email" name="email" class="inputText form-control text-center" placeholder="E-mail do LinkedIn / Corporativo" />
+						<br>
+						<div style="background-color: #75a595;" class="form-control">
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PF"><span class="radioText">Pessoa Física</span>
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="tipo" value="PJ"><span class="radioText">Pessoa Jurídica</span>
+							</label>
+						</div>
+						<br>
+						<button type="button" id="confirmar" class="btn btn-danger form-button" onclick="validarDados()">INICIAR DOWNLOAD</button>
+						<br>
+						<span id="sucess" class="alert alert-success invisible" role="alert">Obrigado, seu download irá começar em breve...</span>
+					</div>
+				<div>
+				
+				<div class="col-lg-2"></div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+	    <footer>
+			<hr style="margin: 5px;">
+			<div class="container">    
+				<div class="row">
+					<div class="col-lg-12" align="center">
+						<a><img style="margin-top: 5px;" alt="Brand" height= "100" width="150"  class="img-rounded" src="/assets/logo.bmp"></a>    
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 mx-auto">
+						<ul class="list-inline text-center">
+							<li class="list-inline-item">
+								<a href="https://www.facebook.com/Transforma-Neg%C3%B3cios-174175363170072/" target="_blank">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/transformanegocio/" target="_blank">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+						
+						<p class="copyright text-muted text-center">Copyright &copy; TransformaNegocios.com 2017</p>
+					</div>
+				</div>
+			</div>
+	    </footer>
+
+		<script src="/js/script.js"></script>
+	</body>
+</html>

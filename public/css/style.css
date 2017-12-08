@@ -3,7 +3,6 @@
 body {
 	background-color: #f7f7f7 !important;
 	overflow-x: hidden;
-	font-family: 'Open Sans', sans-serif; 
 }
 
 .box {
@@ -37,9 +36,6 @@ body {
 	font-weight: bold;
 }
 
-.title{
-	font-weight: bold;
-}
 
 .logoMenu {
 	margin: 5px;
@@ -146,7 +142,7 @@ body {
 /* posts */
 .tituloPost {
 	font-size: 36px;
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 	font-weight: bold;
 }
 
@@ -184,3 +180,29 @@ body {
 	width="100";	
 	background-color: white;
 }
+
+
+/* entrevistas */
+
+.pergunta {
+	font-size: 20px;
+	font-style: italic;
+
+}
+
+.resposta {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.entrevistaCompleta {
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.topico {
+	padding: 20px;
+}
+
